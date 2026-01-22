@@ -1,0 +1,40 @@
+<?php
+
+return [
+    [
+        'name' => 'placard',
+        'title' => '首页公告',
+        'type' => 'text',
+        'value' => '这是滚动公告内容。',
+        'content' => [],
+        'rule' => '',
+        'msg' => '',
+        'tip' => '',
+        'ok' => '',
+        'extend' => '',
+    ],
+    [
+        'name' => 'feedback_group',
+        'title' => '首页群二维码',
+        'type' => 'image',
+        'content' => [],
+        'value' => '',
+        'rule' => '',
+        'msg' => '',
+        'tip' => '群二维码',
+        'ok' => '',
+        'extend' => '',
+    ],
+    [
+        'name' => 'feedback_user',
+        'title' => '首页账号二维码',
+        'type' => 'image',
+        'content' => [],
+        'value' => '',
+        'rule' => '',
+        'msg' => '',
+        'tip' => '账号二维码',
+        'ok' => '',
+        'extend' => '',
+    ],
+];
