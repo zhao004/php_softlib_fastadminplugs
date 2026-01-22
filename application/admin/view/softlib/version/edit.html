@@ -1,0 +1,61 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Version')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-version" class="form-control" name="row[version]" type="text"
+                   value="{$row.version|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text" value="{$row.title|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" class="form-control editor" rows="5" name="row[content]"
+                      cols="50">{$row.content|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Dow_url')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[dow_url]" type="text"
+                   value="{$row.dow_url|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Forced_switch')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <a href="javascript:" data-toggle="switcher" class="btn-switcher" data-input-id="c-forced_switch"
+               data-yes="1"
+               data-no="0">
+                <i class="fa fa-toggle-on text-success {eq name="$row.forced_switch" value="0"}fa-flip-horizontal text-gray{/eq} fa-2x"></i>
+            </a>
+            <input id="c-forced_switch" class="form-control" name="row[forced_switch]" type="hidden"
+                   value="{$row.forced_switch|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Enable_switch')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <a href="javascript:" data-toggle="switcher" class="btn-switcher" data-input-id="c-enable_switch"
+               data-yes="1"
+               data-no="0">
+                <i class="fa fa-toggle-on text-success {eq name="$row.enable_switch" value="0"}fa-flip-horizontal text-gray{/eq} fa-2x"></i>
+            </a>
+            <input id="c-enable_switch" class="form-control" name="row[enable_switch]" type="hidden"
+                   value="{$row.enable_switch|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
